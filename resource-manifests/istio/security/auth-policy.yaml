@@ -1,0 +1,12 @@
+apiVersion: authentication.istio.io/v1alpha1
+kind: Policy
+metadata:
+  name: auth-policy
+spec:
+  targets:
+  - name: sa-web-app
+  origins:
+  - jwt:
+      issuer: "https://dev-9qlbupn3.auth0.com/"
+      jwksUri: "https://dev-9qlbupn3.auth0.com/.well-known/jwks.json"
+  principalBinding: USE_ORIGIN

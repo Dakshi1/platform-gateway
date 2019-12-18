@@ -10,33 +10,9 @@ spec:
   http:
   - match:
     - uri:
-        exact: /
-    - uri:
-        prefix: /callback
-    - uri:
-        exact: /logout
-    - uri:
-        prefix: /static
-    - uri:
-        regex: '^.*\.(ico|png|jpg)$'
-    route:
-    - destination:
-        host: sa-frontend             # 2
-        port:
-          number: 80
-  - match:
-    - uri:
-        prefix: /sentiment
+        prefix: /
     route:
     - destination:
         host: sa-web-app
-        port:
-          number: 80
-  - match:
-    - uri:
-        prefix: /feedback
-    route:
-    - destination:
-        host: sa-feedback
         port:
           number: 80
