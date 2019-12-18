@@ -22,7 +22,7 @@ spec:
         version: v1
     spec:
       containers:
-      - image: shagunbandi/sentiment-analysis-web-app:istio-tracing
+      - image: shagunbandi/platform
         imagePullPolicy: Always
         name: sa-web-app
         env:

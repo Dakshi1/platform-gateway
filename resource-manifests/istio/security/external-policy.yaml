@@ -4,7 +4,7 @@ metadata:
   name: cnn
 spec:
   hosts:
-  - 35.193.37.248
+  - 35.239.195.224
   ports:
   - number: 80
     name: http-port
